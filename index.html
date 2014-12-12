@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html ng-app="angularApp">
+	<head ng-app="angularApp">
+		<meta charset="utf-8">
+
+		<title>Some Functions</title>
+
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<![endif]-->
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<script src="js/angular.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/angularAppController.js"></script>
+
+	</head>
+
+	<body ng-controller="angularAppController as angular">
+		{{angular.test}}
+		<h1>Time To Play!</h1>
+		<label>Reverse a String!</label>
+		<input type="text" placeholder="Enter A String Here" ng-model="reverseIt">
+		<h3>{{ reverseIt | reverse:true }}</h3>
+		<label>Change the Background Color!</label>
+		<button ng-click="angular.randomBGColor()">Change it!</button>
+
+
+	</body>
+</html>
+<html>
+</html>
